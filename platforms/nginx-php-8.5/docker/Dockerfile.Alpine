@@ -77,17 +77,17 @@ RUN apk add --no-cache \
   php85-pdo_sqlite \
   php85-sqlite3 \
   ## Mysql - Mariadb
-  php85-pdo_mysql \
-  php85-mysqlnd \
-  php85-mysqli \
+  #php85-pdo_mysql \
+  #php85-mysqlnd \
+  #php85-mysqli \
   ## Postgre
   #php85-pgsql \
   #php85-pdo_pgsql \
-  #postgresql-dev
+  #postgresql-dev \
   ## MongoDB
-  #php85-pecl-mongodb \
+  php85-pecl-mongodb \
   ## Redis
-  #php85-pecl-redis \
+  php85-pecl-redis \
   ## RabbitMQ
   rabbitmq-c \
   php85-pecl-amqp
@@ -98,7 +98,7 @@ RUN apk add --no-cache \
 RUN docker-php-ext-install \
   pdo \
   ## Mysql - Mariadb
-  pdo_mysql \
+  #pdo_mysql \
   ## Postgre
   #pdo_pgsql \
   ## Sockets

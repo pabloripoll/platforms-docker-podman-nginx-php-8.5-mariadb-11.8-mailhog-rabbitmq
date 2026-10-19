@@ -1,6 +1,6 @@
-# docker-compose.public.yml - standalone, world accessible
+# docker-compose.ports.yml - standalone, world accessible
 services:
 
   apirest:
     ports:
-      - ${COMPOSE_PROJECT_PORT}:80
+      - ${COMPOSE_PORT}:80

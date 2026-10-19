@@ -62,14 +62,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ## SQLite
     libsqlite3-dev \
     ## Mysql - Mariadb
-    default-libmysqlclient-dev \
+    #default-libmysqlclient-dev \
     ## Postgre
     #libpq-dev \
     ## MongoDB (for PECL extension)
-    #pkg-config \
+    pkg-config \
     #libssl-dev \
     ## RabbitMQ / AMQP
-    #librabbitmq-dev \
+    librabbitmq-dev \
+    ## Clear
     && rm -rf /var/lib/apt/lists/*
 
 ## Configure and install PHP GD extension
@@ -81,11 +82,11 @@ RUN docker-php-ext-install -j$(nproc) \
     ## SQLite
     pdo_sqlite \
     ## Mysql - Mariadb
-    pdo_mysql \
-    mysqli \
+    #pdo_mysql \
+    #mysqli \
     ## Postgre
-    #pdo_pgsql \
-    #pgsql \
+    pdo_pgsql \
+    pgsql \
     ## Other extensions
     zip \
     bcmath \
