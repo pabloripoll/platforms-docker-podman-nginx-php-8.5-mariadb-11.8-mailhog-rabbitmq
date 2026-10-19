@@ -8,7 +8,7 @@
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](./)
 [![MIT license](https://shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
-# NGINX + PHP 8.3 & MARIADB 11+
+# NGINX PHP 8.3 & MARIADB 11+
 <br>
 
 This Infrastructure Platform repository is designed for back-end projects and provides three separate platforms:
